@@ -20,7 +20,7 @@ for ul in ul_list:
     two_list = ul.xpath('./li/a/@href')
     for i in two_list:
         car_list.append(i[1:-1])
-with open('数据.txt', 'w', encoding='utf-8') as f:
+with open('城市和车型.txt', 'w', encoding='utf-8') as f:
     f.write(str(city_list))
     f.write('\n')
     f.write(str(car_list))
