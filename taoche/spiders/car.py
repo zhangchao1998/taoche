@@ -7,7 +7,7 @@ class CarSpider(scrapy.Spider):
     name = 'car'
     allowed_domains = ['taoche.com']
     start_urls = []
-    with open('D:/爬虫/taoche/taoche/数据.txt', 'r') as f:
+    with open('D:/爬虫/taoche/taoche/城市和车型.txt', 'r') as f:
         all_sj = f.readlines()
     city_list = eval(all_sj[0].strip('\n'))
     car_list = eval(all_sj[-1].strip('\n'))
